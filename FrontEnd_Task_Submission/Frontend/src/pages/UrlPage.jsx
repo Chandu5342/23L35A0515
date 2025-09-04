@@ -60,7 +60,7 @@ function UrlPage()
       <div>
         <input
           type="text"
-          placeholder="Enter shortcode"
+          placeholder="Enter shortcode of page"
           value={shortcode}
           onChange={(e) => setShortcode(e.target.value)}
           style={{ marginRight: "10px" }}
