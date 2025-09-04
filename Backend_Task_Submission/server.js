@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
+import router from "./routes.js";
 
 dotenv.config()
 
@@ -9,9 +10,9 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.send("running")
+    res.send("URL Shortener Backend Running")
 })
-
+app.use("/", router);
 const PORT=process.env.PORT ||  5000
 app.listen(PORT,()=>{
     console.log("server is running")
