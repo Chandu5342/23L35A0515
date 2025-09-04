@@ -6,7 +6,7 @@ const router = express.Router();
 // create  short url
 router.post("/shorturls", createShortUrl);
 
-// stats for a shortcode
+// stats  a shortcode
 router.get("/shorturls/:shortcode", getStats);
 
 // redirect 
